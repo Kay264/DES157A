@@ -6,19 +6,19 @@ body{
 main{
     position: absolute;
     max-width: 650px;
-    background-color: black;
+    background-color: #151313;
 }
 
 #contentGrid{
     position: relative;
+    top: 40%;
+    right: 10%;
     display: grid;
     grid-template-columns: 275px 275px;
         gap: 25px;
         grid-template-areas: 
         "a b"
         "c d"
-        
-
 }
 
 #Research{
