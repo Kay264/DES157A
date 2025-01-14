@@ -37,3 +37,8 @@ main{
 #GameOn{
     grid-area: d;
 }
+
+footer{
+    background-color: burlywood;
+    padding: 50px;
+}
