@@ -2,3 +2,37 @@ body{
     background-image: url(images/portal_page_v5.svg);
     background-size: cover;
 }
+
+main{
+    position: absolute;
+    max-width: 650px;
+    background-color: black;
+}
+
+#contentGrid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 275px 275px;
+        gap: 25px;
+        grid-template-areas: 
+        "a b"
+        "c d"
+        
+
+}
+
+#Research{
+    grid-area: a;
+}
+
+#MadLib{
+    grid-area: b;
+}
+
+#EveryPicture{
+    grid-area: c;
+}
+
+#GameOn{
+    grid-area: d;
+}
