@@ -1,25 +1,74 @@
 body{
-    background-image: url(images/portal_page_v5.svg);
-    background-size: cover;
-    color: aliceblue;
+
+   /* background-image: url(images/portal_page_v5.svg);
+    background-size: 1300px 750px;
+    background-repeat: no-repeat; */
+    color: rgb(148, 75, 39);
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+h1{
+    font-family: "Codystar";
+    font-size: 30px;
+}
+
+h2{
+    font-family: "Montserrat";
+    font-size: 24px;
 }
 
 main{
-    position: absolute;
-    max-width: 650px;
+    position: relative;
+    height: 700px;
+}
+
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
     background-color: #151313;
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 5px;
+    min-width: 50px;
 }
 
 #contentGrid{
-    position: relative;
-    top: 40%;
-    right: 10%;
+    background-color: #151313;
+    width: 650px;
+    height: 450px;
+    position: absolute;
+    top: 35.7%;
+    right: 0%;
     display: grid;
-    grid-template-columns: 275px 275px;
-        gap: 25px;
+    grid-template-columns: 300px 300px;
         grid-template-areas: 
         "a b"
         "c d"
+}
+
+article{
+    text-align: left;
+    padding: 5px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: burlywood;
+    max-height: 150px;
 }
 
 #Research{
@@ -39,6 +88,11 @@ main{
 }
 
 footer{
-    background-color: burlywood;
-    padding: 50px;
+    background-color: rgb(56, 55, 62);
+    padding: 5px;
+}
+
+footer > a{
+    text-decoration: none;
+    color: aliceblue;
 }

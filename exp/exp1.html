@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    
+    <script>
+        //This program will take user input to make a triangle
+        //The triangle height will be specified based on the input value
+
+        var rows = prompt("Enter the number of rows for a triangle:", "");
+
+        for(var i = 1; i <= rows; i++){
+            var row = ""; //will hold the outputted rows before printing to the console
+            for(var j = 1; j <= i; j++){
+                row += "#";
+            }
+            console.log(row);
+            
+        }
+    </script>
+</body>
+</html>
