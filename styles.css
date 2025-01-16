@@ -1,23 +1,246 @@
 body{
 
-    background-image: url(images/portal_page_v6.png);
+    background-image: url(images/portal_page_v10.png);
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgb(148, 75, 39);
+    color:#cfcece;
     margin: auto;
-    text-align: center;
-    font-size: 12px;
+    text-align: left;
+    font-size: 16px;
 }
 
 h1{
-    font-family: "Codystar";
+    font-family: "Corben";
     font-size: 30px;
+    text-align: center;
+    color: #86511f; 
 }
 
 h2{
     font-family: "Montserrat";
-    font-size: 24px;
+    font-size: 20px;
+    color: #cfcece;
+
 }
+
+#header{
+    position: relative;
+    padding: 200px;
+}
+/* individual character in the lanturn header*/
+#L1{
+    position: absolute;
+    top: 14%;
+    left: 29%;
+}
+#L2{
+    position: absolute;
+    top: 16%;
+    left: 32.5%;
+}
+#L3{
+    position: absolute;
+    top: 19%;
+    left: 36.25%;
+}
+#L4{
+    position: absolute;
+    top: 21%;
+    left: 39.25%;
+}
+#L5{
+    position: absolute;
+    top: 22.75%;
+    left: 42.30%;
+}
+#L6{
+    position: absolute;
+    top: 24%;
+    left: 46%;
+}
+#L7{
+    position: absolute;
+    top: 24.5%;
+    left: 53%;
+}
+#L8{
+    position: absolute;
+    top: 24%;
+    left: 56.5%;
+}
+#L9{
+    position: absolute;
+    top: 22.5%;
+    left: 60%;
+}
+#L10{
+    position: absolute;
+    top: 20.75%;
+    left: 63.5%;
+}
+#L11{
+    position: absolute;
+    top: 18%;
+    left: 66.5%;
+}
+#L12{
+    position: absolute;
+    top: 15.5%;
+    left: 70%;
+}
+#headerTwo{
+    position: absolute;
+    top: 33.25%;
+    left: 47%;
+}
+
+/*Star images + animations*/
+#star1{
+    position: absolute;
+    animation: scaleUpDown 2s infinite ease-in-out;
+    top: 30%;
+    left: 50%;
+}
+#star2{
+    position: absolute;
+    animation: scaleUpDown 2.25s infinite ease-in-out;
+    top: 20%;
+    left: 10%;
+
+}
+#star3{
+    position: absolute;
+    animation: scaleUpDown 1.75s infinite ease-in-out;
+    top: 15%;
+    left: 65%;
+}
+#star4{
+    position: absolute;
+    animation: scaleUpDown 1.5s infinite ease-in-out;
+    top: 13%;
+    left: 35%;
+}
+#star5{
+    position: absolute;
+    animation: scaleUpDown 1.25s infinite ease-in-out;
+    top: 45%;
+    left: 36%;
+}
+#star6{
+    position: absolute;
+    animation: scaleUpDown 2s infinite ease-in-out;
+    top: 17%;
+    left: 55%;
+}
+
+#star7{
+    position: absolute;
+    animation: scaleUpDown 1.25s infinite ease-in-out;
+    top: 19%;
+    left: 98.5%;
+}
+
+#star8{
+    position: absolute;
+    animation: scaleUpDown 1.75s infinite ease-in-out;
+    top: 12%;
+    left: 5%;
+}
+
+#star9{
+    position: absolute;
+    animation: scaleUpDown 1.5s infinite ease-in-out;
+    top: 8%;
+    left: 75%;
+}
+
+#star10{
+    position: absolute;
+    animation: scaleUpDown 1.75s infinite ease-in-out;
+    top: 5%;
+    left: 46%;
+}
+
+#star11{
+    position: absolute;
+    animation: scaleUpDown 1.0s infinite ease-in-out;
+    top: 6%;
+    left: 20%;
+}
+
+#star12{
+    position: absolute;
+    animation: scaleUpDown 2s infinite ease-in-out;
+    top: 35%;
+    left: 1%;
+}
+
+#star13{
+    position: absolute;
+    animation: scaleUpDown 2s infinite ease-in-out;
+    top: 30%;
+    left: 30%;
+}
+
+
+@keyframes scaleUpDown {
+    0%, 100% {
+        transform: scale(0.5); /* small size */
+        opacity: 50%;
+    }
+    50% {
+        transform: scale(3); /* large size */
+        opacity: 100%;
+    }
+}
+
+#LW1{
+    position: absolute;
+    width: 185px;
+    top:111.95%;
+    left: 23.8%;
+    opacity: 0%;
+    animation: conceal 2s both;
+
+}
+
+#LW1:hover{
+    animation: reveal 2s ease-in-out both;
+}
+
+#SW1{
+    position: absolute;
+    width: 102px;
+    top: 93.3%;
+    left: 3.95%;
+    opacity: 0%;
+    animation: conceal 2s both;
+}
+
+#SW1:hover{
+    animation: reveal 2s ease-in-out both;
+}
+
+@keyframes reveal {
+    0%{
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes conceal{
+    from{
+       opacity: 100%;
+    }
+    to{
+       opacity: 0%;
+    }
+}  
 
 main{
     position: relative;
@@ -34,28 +257,40 @@ nav ul li{
 
 ul{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 150px 150px;
+    padding: 0;
+    margin:0;
+    height: 100px;
+    text-align: left;
+}
+li{
+    min-width: 220px;
 }
 
 a{
     text-decoration: none;
     list-style: none;
-    background-color: #151313;
+    background-color: #424040;
     border-radius: 20px;
-    color: aliceblue;
-    padding: 5px;
-    min-width: 50px;
+    color: #cfcece;
+    padding: 8px;
+    min-width: 100px;
+    transition: ease-in-out;
+}
+a:hover{
+    background-color: #fdc17f;
+    color: #151313;
 }
 
 #contentGrid{
     background-color: #151313;
-    width: 650px;
-    height: 450px;
+    width: 878px;
+    height: 530px;
     position: absolute;
-    top: 35.7%;
+    top: 57%;
     right: 0%;
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 425px 425px;
         grid-template-areas: 
         "a b"
         "c d"
@@ -63,36 +298,49 @@ a{
 
 article{
     text-align: left;
-    padding: 5px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    background-color: burlywood;
-    max-height: 150px;
+    margin: 30px;
+    padding: 10px;
 }
 
 #Research{
     grid-area: a;
+    background-color: #657983;
+
 }
 
 #MadLib{
     grid-area: b;
+    background-color: #7c479c ;
 }
 
 #EveryPicture{
     grid-area: c;
+    background-color: #997e56;
 }
 
 #GameOn{
     grid-area: d;
+    background-color: #302e8a;
 }
 
 footer{
-    background-color: rgb(56, 55, 62);
-    padding: 5px;
+    background-color: rgba(56, 55, 62, 0.75);
+    padding: 20px;
+    height: 70px;
+    width: 310px;
+    font-size: 16px;
+    position: absolute;
+    top:90%;
+
 }
 
 footer > a{
-    text-decoration: none;
+    text-decoration: underline;
     color: aliceblue;
+    background-color: transparent;
+}
+
+footer > a:hover{
+    color:#7c479c;
+    background-color: transparent;
 }
