@@ -1,24 +1,32 @@
-body{
-
+#bigboi{
+    position: relative;
+    width: 1200px;
+    height: 750px;
     background-image: url(images/portal_page_v10.png);
     background-size: cover;
     background-repeat: no-repeat;
+    
+}
+
+body{
+
+    
     color:#cfcece;
     margin: auto;
     text-align: left;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 h1{
     font-family: "Corben";
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     color: #86511f; 
 }
 
 h2{
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 18px;
     color: #cfcece;
 
 }
@@ -30,67 +38,67 @@ h2{
 /* individual character in the lanturn header*/
 #L1{
     position: absolute;
-    top: 14%;
+    top: 12%;
     left: 29%;
 }
 #L2{
     position: absolute;
-    top: 16%;
+    top: 14%;
     left: 32.5%;
 }
 #L3{
     position: absolute;
-    top: 19%;
+    top: 17%;
     left: 36.25%;
 }
 #L4{
     position: absolute;
-    top: 21%;
+    top: 19%;
     left: 39.25%;
 }
 #L5{
     position: absolute;
-    top: 22.75%;
+    top: 20.75%;
     left: 42.30%;
 }
 #L6{
     position: absolute;
-    top: 24%;
+    top: 22%;
     left: 46%;
 }
 #L7{
     position: absolute;
-    top: 24.5%;
+    top: 22%;
     left: 53%;
 }
 #L8{
     position: absolute;
-    top: 24%;
+    top: 21.5%;
     left: 56.5%;
 }
 #L9{
     position: absolute;
-    top: 22.5%;
+    top: 19.5%;
     left: 60%;
 }
 #L10{
     position: absolute;
-    top: 20.75%;
+    top: 18%;
     left: 63.5%;
 }
 #L11{
     position: absolute;
-    top: 18%;
+    top: 16%;
     left: 66.5%;
 }
 #L12{
     position: absolute;
-    top: 15.5%;
+    top: 13.5%;
     left: 70%;
 }
 #headerTwo{
     position: absolute;
-    top: 33.25%;
+    top: 29.25%;
     left: 47%;
 }
 
@@ -196,9 +204,9 @@ h2{
 
 #LW1{
     position: absolute;
-    width: 185px;
-    top:111.95%;
-    left: 23.8%;
+    width: 136px;
+    top: 82.7%;
+    left: 23.9%;
     opacity: 0%;
     animation: conceal 2s both;
 
@@ -210,8 +218,8 @@ h2{
 
 #SW1{
     position: absolute;
-    width: 102px;
-    top: 93.3%;
+    width: 75px;
+    top: 69%;
     left: 3.95%;
     opacity: 0%;
     animation: conceal 2s both;
@@ -252,19 +260,19 @@ nav ul li{
     list-style: none;
     text-align: left;
     padding: 5px;
-    margin: 5px;
+    margin: 0px;
 }
 
 ul{
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 125px 125px;
     padding: 0;
     margin:0;
     height: 100px;
     text-align: left;
 }
 li{
-    min-width: 220px;
+    min-width: 160px;
 }
 
 a{
@@ -284,13 +292,13 @@ a:hover{
 
 #contentGrid{
     background-color: #151313;
-    width: 878px;
-    height: 530px;
+    width: 650px;
+    height: 450px;
     position: absolute;
-    top: 57%;
+    top: 42.7%;
     right: 0%;
     display: grid;
-    grid-template-columns: 425px 425px;
+    grid-template-columns: 325px 325px;
         grid-template-areas: 
         "a b"
         "c d"
@@ -298,8 +306,8 @@ a:hover{
 
 article{
     text-align: left;
-    margin: 30px;
-    padding: 10px;
+    margin: 20px;
+    padding: 5px;
 }
 
 #Research{
@@ -326,11 +334,11 @@ article{
 footer{
     background-color: rgba(56, 55, 62, 0.75);
     padding: 20px;
-    height: 70px;
-    width: 309px;
+    height: 60px;
+    width: 220px;
     font-size: 16px;
     position: absolute;
-    top:90%;
+    top:87%;
 
 }
 
