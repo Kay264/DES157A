@@ -1,0 +1,126 @@
+body{
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+header{
+    background-color: #191248;
+    color: antiquewhite;
+    height: 150px;
+    position: relative;
+}
+
+#star1{
+    position: absolute;
+    animation: scaleUpDown 2s infinite ease-in-out;
+    top: 20%;
+    left: 30%;
+}
+
+#star2{
+    position: absolute;
+    animation: scaleUpDown 1.75s infinite ease-in-out;
+    top: 10%;
+    right: 30%;
+}
+
+#star3{
+    position: absolute;
+    animation: scaleUpDown 1.5s infinite ease-in-out;
+    top: 30%;
+    right: 10%;
+}
+
+#star4{
+    position: absolute;
+    animation: scaleUpDown 1s infinite ease-in-out;
+    top: 50%;
+    right: 20%;
+}
+
+#star5{
+    position: absolute;
+    animation: scaleUpDown 1.75s infinite ease-in-out;
+    top: 60%;
+    left: 10%;
+}
+
+#star6{
+    position: absolute;
+    animation: scaleUpDown 1.75s infinite ease-in-out;
+    top: 15%;
+    left: 5%;
+}
+
+#star7{
+    position: absolute;
+    animation: scaleUpDown 2.25s infinite ease-in-out;
+    top: 25%;
+    left: 20%;
+}
+
+#star8{
+    position: absolute;
+    animation: scaleUpDown 1.25s infinite ease-in-out;
+    bottom: 5%;
+    left: 45%;
+}
+
+#star9{
+    position: absolute;
+    animation: scaleUpDown 1s infinite ease-in-out;
+    bottom: 5%;
+    left: 90%;
+}
+
+#star10{
+    position: absolute;
+    animation: scaleUpDown 1.25s infinite ease-in-out;
+    bottom: 10%;
+    left: 30%;
+}
+
+@keyframes scaleUpDown {
+    0%, 100% {
+        transform: scale(0.5); /* small size */
+        opacity: 50%;
+    }
+    50% {
+        transform: scale(3); /* large size */
+        opacity: 100%;
+    }
+}
+
+
+h1{
+    margin: auto;
+    padding:50px;
+    font-size: 3em;
+    font-family: "Corben";
+}
+h2{
+    text-align: center;
+    font-family: "Corben";
+}
+time{
+    text-align: center;
+}
+
+main{
+    background-color: #181818;
+    padding: 75px;
+    padding-bottom: 100px;
+}
+
+article{
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+    padding: 50px;
+    background-color: #BB8753;
+}
+
+p{
+    padding: 10px;
+    line-height: 30px;
+}
