@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Experiment 1</title>
+
+    <style>
+        body{
+            margin: 500;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+
+    <p>You can choose the number of rows and the color of this triangle!</p>
+
+    <div id="triangle"><p>place for triangle</p></div>
+    
+    <script>
+        //This code is an iteration of the previous experiment
+        //This iteration introduces functions and DOM
+        //This program will take user input to make a triangle
+        //The triangle height will be specified based on the input value
+
+
+        //Initial inputs___________________________________________________________________________
+        var rows = prompt("Enter the number of rows for a triangle:", "");
+
+        var colorInput = prompt("Enter a list of colors separated by commas:");
+        var colors = colorInput.split(",").map(item => item.trim()); 
+
+        //color list for testing: yellow, red, orange, magenta, pink
+
+
+        //generative a random number to choose one of the input colors for the triangle____________
+        function ranValForColors( min, max){
+            var numOfVals = max - min +1;
+            var ranNum = Math.random();
+            var ranVal = ranNum * numOfVals;
+            var roundedRanVal = Math.floor(ranVal);
+            var finNum = min + roundedRanVal;
+
+            return( finNum );  
+        }
+
+
+        var colorNum = ranValForColors( 0, colors.length - 1);
+
+        //Choosing the color_______________________________________________________________________
+
+        function choosenColor(){
+            var choosenColor = colors[colorNum];
+            
+            return choosenColor;
+        }
+
+        //Forming the triangle_____________________________________________________________________
+
+        function formTriangle(numOfRows){
+            let triangle = "";
+            for(var i = 1; i <= numOfRows; i++){//loop + selection(comparison) + sequence 
+                var row = ""; //will hold the outputted rows before printing to the console
+                for(var j = 1; j <= i; j++){//loop + selection(comparison) + sequence
+                    row += "#";
+                }
+                  triangle += row + "<br>";
+            }
+            return triangle;
+        }
+
+        //input the triaangloe in the doccument and change the color_______________________________
+        var myDiv = document.querySelector('#triangle p');
+        myDiv.innerHTML = formTriangle(rows);
+        document.querySelector('#triangle p').style.color = choosenColor();
+
+
+    </script>
+</body>
+</html>
