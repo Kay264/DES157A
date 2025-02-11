@@ -16,43 +16,94 @@
 <body>
     <!--Stacked Sections-->
     <main>
+
+
+        <!--First page-->
         <section id="intro">
             <article>
                 <figure id="introImgs">
-                    <!--add background images-->
+                    <img src="images/tempIntroScreen.png" alt="intro page">
                 </figure>
             </article>
             
             <article>
-                <h1>Afterlife Obituary</h1>
-                <p>Welcome recently deceased! I'm death. It’s a pleasure to be at your service. I’ll need your help writing your official Afterlife Obituary. Let me know when you're ready.</p>
+                <h1 id="title">Afterlife Obituary</h1>
+                <p id="screen1Text">Welcome recently deceased! I'm death. It’s a pleasure to be at your service. I’ll need your help writing your official Afterlife Obituary. Let me know when you're ready.</p>
 
                 <button id="ready">I'm ready</button>
             </article>
         </section>
+
+
+        <!--Second page-->
         <section id="form">
             <article>
                 <figure id="formImgs">
-                    <!--add background images-->
+                    <img src="images/tempFormScreen.png" alt="form page">
                 </figure>
             </article>
             <article>
                 <p>please take your time</p>
 
-                <form>
-                    <!--add form content-->
-                    <!--form edits: more specific prompts, radio button for various types of death?(violently, peacefully)-->
+                <form id="myform">
+                    <!--pronouns-->
+                    <p>Which of these pronouns suit you best?</p>
+                    <input type="radio" id="she/her" name="pronoun" value="she/her">
+                    <label for="she/her">she/her</label>
+                    <input type="radio" id="he/him" name="pronoun" value="he/him">
+                    <label for="he/him">he/him</label>
+                    <input type="radio" id="they/them" name="pronoun" value="they/them">
+                    <label for="they/them">they/them</label>
+
+                    <!--Main Storyline-->
+                    <label for="name">What's your name?</label>
+                    <input type="text" id="name">
+                    
+                    <label for="noun1">Please provide an "impressive" noun, positive or negative</label>
+                    <input type="text" id="noun1" value="example: valedictorian">
+
+                    <label for="activity1">Please provide an activity ending in "ing"</label>
+                    <input type="text" id="activity2" value="example: reading">
+
+                    <label for="activity2">I'll need another activity ending in "ing"</label>
+                    <input type="text" id="activity2" value="example: walking">
+
+                    <label for="location">Ok now please provide a place</label>
+                    <input type="text" id="location" value="example: a castle">
+
+                    <label for="relation">Please provide an improper noun for a person or group of people</label>
+                    <input type="text" id="relation" value="example: mom">
+
+                    <label for="action">Please provide an action ending in "ed"</label>
+                    <input type="text" id="action" value="example: kissed">
+
+                    <label for="noun2">Please provide a new noun</label>
+                    <input type="text" id="noun2" value="example: lion">
+
+                    <label for="feeling">Please provide a feeling</label>
+                    <input type="text" id="feeling" value="example: excited">
+
+                    <label for="adjective">Please provide an adjective, so a description word</label>
+                    <input type="text" id="adjective" value="example: fast">
+
+                    <label for="noun3">Please provide a final noun</label>
+                    <input type="text" id="noun3" value="example: runner">
+
+                    <input type="submit" name="complete" value="I'm done!">
+                    
                 </form>
 
                 <button>I'm done</button>
             
             </article>
            
+
+        <!--Third page-->
         </section>
         <section id="results">
             <article>
                 <figure id="resultsImgs">
-                    <!--add background images-->
+                    <img src="images/TempResultScreen.png" alt="results page">
                 </figure>
             </article>
            <article>
