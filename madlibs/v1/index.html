@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madlib Version 1</title>
 
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
     <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pirata+One&family=Quintessential&display=swap" rel="stylesheet">
     
     <!--Style Sheet-->
+    <link href="styles.css" rel="stylesheet">
 
     <!--JavaScript-->
 
@@ -19,106 +26,147 @@
 
 
         <!--First page-->
-        <section id="intro">
-            <article>
-                <figure id="introImgs">
-                    <img src="images/tempIntroScreen.png" alt="intro page">
-                </figure>
-            </article>
-            
-            <article>
-                <h1 id="title">Afterlife Obituary</h1>
-                <p id="screen1Text">Welcome recently deceased! I'm death. It’s a pleasure to be at your service. I’ll need your help writing your official Afterlife Obituary. Let me know when you're ready.</p>
+        <div id="section1">
+            <section id="intro">
+                <article>
+                    <figure id="introImgs">
+                        <img src="images/tempIntroScreen.png" alt="intro page">
+                    </figure>
+                </article>
+                
+                <article>
+                    <header>
+                        <h1 id="title">Afterlife Obituary</h1>
+                    </header>
 
-                <button id="ready">I'm ready</button>
-            </article>
-        </section>
+                    <div id="welcome">
+                        <p class="speach" >Welcome recently deceased! I'm death. It’s a pleasure to be at your service. </p>
+                        <p class="speach">I’ll need your help writing your Official Afterlife Obituary. Let me know when you're ready.</p>
+                    </div>
+                    <button id="ready">I'm ready</button>
+                </article>
+            </section>
+        </div>
 
 
         <!--Second page-->
-        <section id="form">
-            <article>
-                <figure id="formImgs">
-                    <img src="images/tempFormScreen.png" alt="form page">
-                </figure>
-            </article>
-            <article>
-                <p>please take your time</p>
+        <div id="section2">
+            <section id="form">
+                <article>
+                    <figure id="formImgs">
+                        <img src="images/tempFormScreen.png" alt="form page">
+                    </figure>
+                </article>
+                <article>
+                    <p class="speach" id="time">please take your time</p>
 
-                <form id="myform">
-                    <!--pronouns-->
-                    <p>Which of these pronouns suit you best?</p>
-                    <input type="radio" id="she/her" name="pronoun" value="she/her">
-                    <label for="she/her">she/her</label>
-                    <input type="radio" id="he/him" name="pronoun" value="he/him">
-                    <label for="he/him">he/him</label>
-                    <input type="radio" id="they/them" name="pronoun" value="they/them">
-                    <label for="they/them">they/them</label>
+                    <div class="container">
+                        <form id="myform">
 
-                    <!--Main Storyline-->
-                    <label for="name">What's your name?</label>
-                    <input type="text" id="name">
-                    
-                    <label for="noun1">Please provide an "impressive" noun, positive or negative</label>
-                    <input type="text" id="noun1" value="example: valedictorian">
+                            <div>
+                                <fieldset id="pronouns">
+                                    <!--pronouns-->
+                                    <p id="formP">1. Which of these pronouns suit you best?</p>
+                                    <input type="radio" id="sheher" name="pronoun" value="she/her">
+                                    <label for="she/her">she/her</label>
+                                    <input type="radio" id="hehim" name="pronoun" value="he/him">
+                                    <label for="he/him">he/him</label>
+                                    <input type="radio" id="theythem" name="pronoun" value="they/them">
+                                    <label for="they/them">they/them</label>
+                                </fieldset>
+                            </div>
 
-                    <label for="activity1">Please provide an activity ending in "ing"</label>
-                    <input type="text" id="activity2" value="example: reading">
+                            <div>
+                                <!--Main Storyline-->
+                                <div class="form-group">
+                                    <label for="name">2. What's your name?</label>
+                                    <input type="text" id="name"required>
+                                </div>
 
-                    <label for="activity2">I'll need another activity ending in "ing"</label>
-                    <input type="text" id="activity2" value="example: walking">
+                                <div class="form-group">
+                                    <label for="noun1">3. Please provide an "impressive" noun, positive or negative</label>
+                                    <input type="text" id="noun1" placeholder="example: valedictorian"required>
+                                </div>
 
-                    <label for="location">Ok now please provide a place</label>
-                    <input type="text" id="location" value="example: a castle">
+                                <div class="form-group">
+                                    <label for="activity1">4. Please provide an activity ending in "ing"</label>
+                                    <input type="text" id="activity2" placeholder="example: reading"required>
+                                </div>
 
-                    <label for="relation">Please provide an improper noun for a person or group of people</label>
-                    <input type="text" id="relation" value="example: mom">
+                                <div class="form-group">
+                                    <label for="activity2">5. I'll need another activity ending in "ing"</label>
+                                    <input type="text" id="activity2" placeholder="example: walking"required>
+                                </div>
 
-                    <label for="action">Please provide an action ending in "ed"</label>
-                    <input type="text" id="action" value="example: kissed">
+                                <div class="form-group">
+                                    <label for="location">6. Ok now please provide a place</label>
+                                    <input type="text" id="location" placeholder="example: a castle"required>
+                                </div>
 
-                    <label for="noun2">Please provide a new noun</label>
-                    <input type="text" id="noun2" value="example: lion">
+                                <div class="form-group">
+                                    <label for="relation">7. Please provide an improper noun for a person or group of people</label>
+                                    <input type="text" id="relation" placeholder="example: mom"required>
+                                </div>
 
-                    <label for="feeling">Please provide a feeling</label>
-                    <input type="text" id="feeling" value="example: excited">
+                                <div class="form-group">
+                                    <label for="action">8. Please provide an action ending in "ed"</label>
+                                    <input type="text" id="action" placeholder="example: kissed"required>
+                                </div>
 
-                    <label for="adjective">Please provide an adjective, so a description word</label>
-                    <input type="text" id="adjective" value="example: fast">
+                                <div class="form-group">
+                                    <label for="noun2">9. Please provide a new noun</label>
+                                    <input type="text" id="noun2" placeholder="example: lion"required>
+                                </div>
 
-                    <label for="noun3">Please provide a final noun</label>
-                    <input type="text" id="noun3" value="example: runner">
+                                <div class="form-group">
+                                    <label for="feeling">10. Please provide a feeling</label>
+                                    <input type="text" id="feeling" placeholder="example: excited"required>
+                                </div>
 
-                    <input type="submit" name="complete" value="I'm done!">
-                    
-                </form>
+                                <div class="form-group">
+                                    <label for="adjective">11. Please provide an adjective, so a description word</label>
+                                    <input type="text" id="adjective" placeholder="example: fast"required>
+                                </div>
 
-                <button>I'm done</button>
+                                <div class="form-group">
+                                    <label for="noun3">12. Please provide a final noun</label>
+                                    <input type="text" id="noun3" placeholder="example: runner"required>
+                                </div>
+
+                                <input type="submit" name="complete" placeholder="I'm done!">
+                            </div>
+                        </form>
+                    </div>
+
+                
+                </article>
             
-            </article>
-           
+            </section>
+        </div>
+
 
         <!--Third page-->
-        </section>
-        <section id="results">
+        <div id="section3">
+            <section id="results">
+                <article>
+                    <figure id="resultsImgs">
+                        <img src="images/TempResultScreen.png" alt="results page">
+                    </figure>
+                </article>
             <article>
-                <figure id="resultsImgs">
-                    <img src="images/TempResultScreen.png" alt="results page">
-                </figure>
+                    <p class="speach" id="end">Welcome to the afterlife!</p>
+
+                    <div id="obituary">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos provident dolore quae sunt architecto vero aspernatur, mollitia nobis error similique placeat debitis laboriosam, blanditiis rem temporibus incidunt eaque commodi aliquam? Repellat deserunt officiis iste nostrum necessitatibus culpa modi nesciunt autem provident, nihil, quidem ratione qui excepturi quod delectus magni, vero quam numquam? Nobis eligendi dolor voluptatem. Sapiente nostrum, cupiditate consequatur quos fuga animi, eius neque inventore deleniti aspernatur assumenda hic laudantium officia veritatis impedit delectus, soluta accusantium earum minus nesciunt?
+                        </p>
+                    </div>
+
+                    <button id="restart">retry</button>
+
             </article>
-           <article>
-                <p>Welcome to the afterlife!</p>
-
-                <div id="obituary">
-                    <!--add results-->
-                </div>
-
-                <button>retry</button>
-
-           </article>
-            
-        </section>
-
+                
+            </section>
+        </div>
 
     </main>
     

@@ -1,0 +1,231 @@
+/*overall page organization*/
+
+main{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section{
+    position: relative;
+    margin: auto;
+}
+
+#section1{
+    position: absolute;
+    top:0%;
+    left:0%;
+}
+#section2{
+    position: absolute;
+    top:0%;
+    left:0%;
+}
+
+#section3{
+    position: absolute;
+    top:0%;
+    left:0%;
+}
+
+/*form styling*/
+
+.container{
+    background-color: #f2dcb1;
+    max-width: 400px;
+    padding: 10px;
+}
+
+label{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    font-family: "EB Garamond";
+    font-size: 0.8em;
+    color: #391907;
+}
+
+#formP{
+    font-family: "EB Garamond";
+    font-size: 0.8em;
+    color: #391907;
+}
+
+input::placeholder{
+    font-family: "EB Garamond";
+    font-size: 0.8em;
+}
+
+fieldset {
+    padding: 0;
+    border: none; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"] { 
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed grey;
+    background-color: #f2dcb1;
+    width: 30%;
+    margin-bottom: 10px;
+
+}
+
+input[type="submit"]{
+    background-color: #dbc59b;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color: #a79471;
+    color:antiquewhite;
+}
+
+/*non-form text*/
+h1{
+    font-family: "Pirata One";
+    color:#96031A;
+    font-size: 5em;
+}
+
+header{
+    width:300px;
+}
+
+p{
+    font-family: "EB Garamond";
+}
+
+.speach{
+    font-family: "Quintessential";
+    font-size: 1em;
+    line-height: 40px;
+}
+
+#welcome{
+    max-width: 500px;
+    background-color: rgb(250, 249, 245);
+    padding: 10px;
+    border-radius: 40px;
+    
+}
+
+#time{
+    max-width: 200px;
+    background-color: rgb(250, 249, 245);
+    padding: 10px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+#end{
+    max-width: 200px;
+    background-color: rgb(250, 249, 245);
+    padding: 10px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+#ready{
+    background-color: #dbc59b;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+#ready:hover{
+    background-color: #a79471;
+    color:antiquewhite;
+}
+
+#restart{
+    background-color: #dbc59b;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+#restart:hover{
+    background-color: #a79471;
+    color:antiquewhite;
+}
+
+#obituary{
+    background-color: lightgray;
+    max-width: 400px;
+    padding: 10px;
+    line-height: 25px;
+
+}
+
+/*Section 1 layouts*/
+
+header{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+
+#welcome{
+    position: absolute;
+    top: 7%;
+    right: 2%;
+}
+
+#ready{
+    position:absolute;
+    bottom: 5%;
+    right:5%;
+}
+
+
+/*Section 2 layouts*/
+
+.container{
+    position: absolute;
+    top: 15%;
+    right: 18%;
+}
+
+#time{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+/*Section 3 layouts*/
+
+#obituary{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+#end{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+#restart{
+    position:absolute;
+    bottom: 5%;
+    right:5%;
+}
+
+/*Section stacking*/
+
+#section1{z-index: 1;}
+#section2{}
+#section3{}
