@@ -228,7 +228,13 @@ header{
     right: 25.5%;
 }
 
-#time{
+#time1{
+    position: absolute;
+    top: 0%;
+    left: 35%;
+}
+
+#time2{
     position: absolute;
     top: 0%;
     left: 35%;
