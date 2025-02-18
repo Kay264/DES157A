@@ -17,27 +17,37 @@ section{
     margin: auto;
 }
 
+/*Section position & stacking*/
+
 #section1{
     position: absolute;
     top:10%;
     left:15%;
+
+    z-index: 1;
 }
 #section2{
     position: absolute;
     top:10%;
     left:15%;
+
+    z-index: 0;
 }
 
 #section3{
     position: absolute;
     top:10%;
     left:15%;
+
+    z-index: 0;
 }
 
 #section4{
     position: absolute;
     top:10%;
     left:15%;
+
+    z-index: 0;
 }
 
 /*form styling*/
@@ -86,7 +96,7 @@ input[type="text"] {
     border: none;
     border-bottom: 1px dashed grey;
     background-color: #fbefae;
-    width: 30%;
+    width: 40%;
     margin-bottom: 10px;
 
 }
@@ -229,7 +239,7 @@ header{
 
 #obituary{
     position: absolute;
-    top: 25%;
+    top: 35%;
     right: 23%;
 }
 
@@ -244,10 +254,3 @@ header{
     bottom: 5%;
     right:5%;
 }
-
-/*Section stacking*/
-
-#section1{}
-#section2{}
-#section3{}
-#section4{z-index: 1;}
