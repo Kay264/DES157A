@@ -1,0 +1,53 @@
+
+body{
+    background-color: #B0BDB2;
+    opacity: 1;
+}
+
+main{
+    width: 1500px;
+    margin:auto;
+    justify-content: center;
+    position: relative;
+}
+
+#polaroid{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    background-color: antiquewhite;
+    padding: 20px;
+    padding-bottom: 80px;
+    opacity: 0;
+}
+
+
+
+header{
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 3em;
+    font-family: "Permanent Marker";
+    color: rgb(14, 50, 14)
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+#image
+
+#close{
+    position: absolute;
+    top: -1%;
+    left: -1%;
+}
+
