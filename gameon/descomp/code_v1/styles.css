@@ -3,17 +3,23 @@
 
 body{
     font-family: "Press Start 2P";
+    background-color: rgb(15, 15, 15);
+    
 }
 
 /*_____________________________________________text________________________________________________*/
 
 /*font size for each*/
 
-/*__________________________________________positioning____________________________________________*/
+/*__________________________________Overall positioning____________________________________________*/
 
 /*overall positioning, stack the sections*/
 
-/*positioning within the sections*/
+#centerThatDivHo{
+    position: relative;
+    
+}
+
 
 
 
@@ -26,4 +32,351 @@ body{
 /*sketch animations*/
 
 
-/*________________________________________section styles___________________________________________*/
+/*__________________________________section styles & positioning___________________________________*/
+
+section{
+    height: 750px;
+    width: 1200px;
+}
+
+/*Screen 1*/
+
+#screen1{
+    background-color: #8997AD;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 1;
+}
+
+#screen1Content{
+    position: relative;
+    height: 750px;
+    width: 1200px;
+}
+
+#firstCat{
+    transform: scale(0.5);
+
+    position: absolute;
+    left: -20%;
+    top: -10%;
+}
+#screen1Text{
+    position: absolute;
+    width: 800px;
+    left: 15%;
+    top: 55%;
+    line-height: 35px;
+    font-size: 1em;
+    color: #252a31;
+}
+
+#start{
+    position: absolute;
+    left:45%;
+    top: 85%;
+    padding: 20px;
+    background-color: #E2A96F;
+    color: #392105;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#start:hover{
+    background-color: #d6700a;
+}
+
+
+/*Screen 2*/
+
+/*screen 2 is the fight, no color*/
+#screen2{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 0;
+}
+
+#screen2Content{
+    position: relative;
+    height: 750px;
+}
+
+#quit{
+    position: absolute;
+    left: 4%;
+    top: 2%;
+
+    background-color: #C2B55F;
+    color: #493F4B;
+
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/*header*/
+#fightHead{
+    position: absolute;
+    background-color: rgba(217, 217, 217, 0.8);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+    width: 1100px;
+    left: 4%;
+    top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+#BestBoiName{
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+#VS{
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+#monsterName{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*health*/
+#health{
+    position: absolute;
+    display: flex;
+    gap: 200px;
+    top: 18%;
+    left: 16%;
+}
+
+#boiHealth{
+    position: relative;
+}
+
+#monsterHealth{
+    position: relative;
+}
+
+#outerRec1{
+    background-color: #D9D9D9 ;
+    height: 20px;
+    width: 300px;
+}
+
+#innerRec1{
+    background-color: #57A63C ;
+    height: 20px;
+    width: 300px;
+}
+
+#outerRec2{
+    background-color: #D9D9D9 ;
+    height: 20px;
+    width: 300px;
+}
+
+#innerRec2{
+    background-color: #57A63C ;
+    height: 20px;
+    width: 300px;
+}
+
+#zero1{
+    position: absolute;
+}
+
+#hundred1{
+    position: absolute;
+    left: 90%;
+}
+
+#zero2{
+    position: absolute;
+}
+
+#hundred2{
+    position: absolute;
+    left: 90%;
+}
+
+/*Characters*/
+#characters{
+    position: absolute;
+    left: 20%;
+    top:55%;
+    display: flex;
+    gap: 350px
+}
+
+#bestBoi{
+ transform: scale(1.5);
+}
+
+#monster{
+    transform: scale(1.5);
+
+}
+
+
+/*bottom section*/
+#bottomSection{
+    position: absolute;
+    top: 85%;
+    display: flex;
+}
+
+#fightText{
+    position: relative;
+    left:20%;
+
+    width: 800px;
+    height: 100px;
+    background-color: rgba(217, 217, 217, 0.8);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+}
+
+#mainBtns{
+    position: relative;
+    left: 10%;
+
+
+    width:100px;
+    height: 100px;
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+
+/*Screen 3*/
+
+#screen3{
+    background-color: #7A8C61;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 0;
+}
+
+#screen3Content{
+    position: relative;
+    height: 750px;
+    width:1200px;
+}
+
+#winText1{
+    position: absolute;
+    top:0%;
+    left:30%;
+}
+
+#winCat{
+    position: absolute;
+    top:10%;
+    left:15%;
+    transform: scale(0.5);
+}
+
+#winText2{
+    position: absolute;
+    top:70%;
+    left: 5%;
+}
+
+/*Screen 3 & 4 text*/
+h4{
+    font-size: 60px;
+    color: #FFFFFF;
+}
+
+h5{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+/*Screen 4*/
+
+#screen4{
+    background-color: #A7818C;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 0;
+}
+
+#screen4Content{
+    position: relative;
+    height: 750px;
+    width:1200px;
+}
+
+#lossText1{
+    position: absolute;
+    top:0%;
+    left:30%;
+}
+
+#lossCat{
+    position: absolute;
+    top:10%;
+    left:15%;
+    transform: scale(0.5);
+}
+
+#lossText2{
+    position: absolute;
+    top:70%;
+    left: 25%;
+}
+/*Screen 5*/
+
+#screen5{
+    background-color: #8997AD;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 0;
+}
+
+#screen5Content{
+    position: relative;
+    height: 750px;
+    width: 1200px;
+
+}
+
+#endCat{
+    position: absolute;
+    left: 30%;
+}
+
+#endText{
+    position:absolute;
+    top: 60%;
+    left: 15%;
+}
+
+
+#restart{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+
+    padding: 20px;
+    background-color: #E2A96F;
+    color: #392105;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

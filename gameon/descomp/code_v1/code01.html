@@ -30,108 +30,128 @@
     -sound
     
     -->
+    <div id="centerThatDivHo">
+        <section id="screen1"> <!--________________________________Intro screen________________________-->
+            <div id="screen1Content">
+                <figure id="firstCat">
+                    <img src="images/tempCat1.png" alt="tempcat1">
+                </figure>
 
-    <section id="screen1"> <!--________________________________Intro screen________________________-->
+                <div id="screen1Text">
+                    <p>You are Best Boi, a fearless house cat.</p>
+                    <p>Your human has brought home monsters that you must vanquish!</p>
+                    <p>Are you ready to fight to protect your home?</p>
+                </div>
 
-        <figure>
-            <!--cat-->
-        </figure>
-
-        <div>
-            <p>You are Best Boi, a fearless house cat.</p>
-            <p>Your human has brought home monsters that you must vanquish!</p>
-            <p>Are you ready to fight to protect your home?</p>
-        </div>
-
-        <button id="start">meow!</button> <!--btn1: start-->
-
-    </section>
+                <button id="start">meow!</button> <!--btn1: start-->
+            </div>
+        </section>
 
 
-    <section id="screen2"><!--_________________________________fight scenes________________________-->
-        
-        <img src="images/GameOn_BG.png" id="BG" alt="apartment_background">
+        <section id="screen2"><!--_________________________________fight scenes________________________-->
+           
+            <div id="screen2Content">
+                <img src="images/GameOn_BG.png" id="BG" alt="apartment_background">
 
-        <button id="quit">quit</button><!--btn2: quit-->
+                <button id="quit">quit</button><!--btn2: quit-->
 
-        <header>
-            <h2>Best Boi</h2>
-            <h3>VS</h3>
-            <h2 id="monster_name">Box Monster</h2> <!--Monster name-->
-        </header>
+                <header id="fightHead">
+                    <h2 id="bestBoiName">Best Boi</h2>
+                    <h3 id="VS">VS</h3>
+                    <h2 id="monsterName">Box Monster</h2> <!--Monster name-->
+                </header>
 
-        <div id="health">
-            <!--health bars-->
-        </div>
+                <div id="health"> <!--health Bars-->
 
-        <div id="characters">
+                    <div id="boiHealth">
+                        <div id="outerRec1">
+                            <div id="innerRec1">
 
-            <div id="bestBoi">
+                            </div>
+                        </div>
+                        <p id="zero1">0</p>
+                        <p id="hundred1">100</p>
+                    </div>
+
+                    <div id="monsterHealth">
+                        <div id="outerRec2">
+                            <div id="innerRec2">
+
+                            </div>
+                        </div>
+                        <p id="zero2">0</p>
+                        <p id="hundred2">100</p>
+                    </div>
+
+                </div>
+
+                <div id="characters">
+
+                    <div id="bestBoi">
+                        <img src="images/cat_start.png" alt="Best boi">
+                    </div>
+
+                    <div id="monster">
+                        <img src="images/cardboard.png" alt="box monster">
+                    </div>
+
+                </div>
+
+                <div id="bottomSection">
+
+                    <div id="mainBtns">
+
+                    </div>
+
+                    <div id="fightText">
+                        <p>...</p>
+                    </div>
+
+                </div>
+            
+            </div>
+        </section>
+        <section id="screen3"><!--___________________________________win screen________________________-->
+            <div id="screen3Content">
+
+                <div>
+                    <h4 id="winText1">You won!</h4>
+                    <figure id="winCat">
+                        <img src="images/tempCat2.png" alt="tempcat2">
+                    </figure>
+                    <h5 id="winText2">A new opponent has appeared</h5>
+                </div>
+
+                </div>
+        </section>
+        <section id="screen4"><!--___________________________________loss screen________________________-->
+            <div id="screen4Content">
+
+                <div>
+                    <h4 id="lossText1">You lost</h4>
+                        <figure id="lossCat">
+                            <img src="images/tempCat3.png" alt="tempcat3">
+                        </figure>
+                    <h5 id="lossText2">Stay Determined!</h5>
+                </div>
 
             </div>
+        </section>
+        <section id="screen5"><!--___________________________________end screen________________________-->
+            <div id="screen5Content">
+                <div id="endCat">
+                    <img src="images/loaf.png" alt="loaf">
+                </div>
+                <div id="endText">
+                    <p>You vanquished all the monsters!</p>
+                    <p>Why is the human grabbing the evil water machine?</p>
+                    <p>To be continued...</p>
+                </div>
 
-            <div id="monster">
-
+                <button id="restart">restart</button>
             </div>
-
-        </div>
-
-        <div id="bottomSection">
-
-            <div id="main_btns">
-
-            </div>
-
-            <div id="text">
-                <p>...</p>
-            </div>
-
-        </div>
-    
-
-    </section>
-    <section id="screen3"><!--___________________________________win screen________________________-->
-
-        <div id="win">
-
-        </div>
-        <div>
-            <p>You won!</p>
-            <figure>
-                <!--add cat-->
-            </figure>
-            <p>A new opponent has appeared</p>
-        </div>
-
-    </section>
-</section>
-<section id="screen4"><!--___________________________________loss screen________________________-->
-
-    <div id="loss">
-
+        </section>
     </div>
-    <div>
-        <p>You lost</p>
-            <figure>
-                <!--add cat-->
-            </figure>
-            <p>Stay Determined</p>
-    </div>
 
-</section>
-    </section>
-    <section id="screen5"><!--___________________________________end screen________________________-->
-
-        <div id="end">
-
-        </div>
-        <div>
-            <p>You vanquished all the monsters!</p>
-            <p>Why is the human grabbing the evil water machine?</p>
-            <p>To be continued...</p>
-        </div>
-
-    </section>
-   
 </body>
 </html>
