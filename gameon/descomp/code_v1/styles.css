@@ -7,32 +7,29 @@ body{
     
 }
 
-/*_____________________________________________text________________________________________________*/
 
-/*font size for each*/
 
-/*__________________________________Overall positioning____________________________________________*/
-
-/*overall positioning, stack the sections*/
-
-#centerThatDivHo{
-    position: relative;
-    
+.sec{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
+#InfoBtn{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 7%;
+}
 
+#sound{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 7%;
+}
 
-
-/*__________________________________________animations____________________________________________*/
-
-/*attack animation (frames and movement for cat)*/
-
-/*damage animation*/
-
-/*sketch animations*/
-
-
-/*__________________________________section styles & positioning___________________________________*/
 
 section{
     height: 750px;
@@ -43,9 +40,6 @@ section{
 
 #screen1{
     background-color: #8997AD;
-    position: absolute;
-    left: 0%;
-    top: 0%;
     opacity: 1;
 }
 
@@ -59,17 +53,51 @@ section{
     transform: scale(0.5);
 
     position: absolute;
-    left: -20%;
-    top: -10%;
+    left: 22%;
+    top: 10%;
 }
+
+#firstCatContent{
+    position: relative;
+}
+
+#catVWorld1{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    animation: fade1 2s infinite;
+}
+
+#catVWorld2{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    animation: fade2 2s infinite 0.66s;
+}
+
+#catVWorld3{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    animation: fade3 2s infinite 1.33s;
+}
+
 #screen1Text{
     position: absolute;
     width: 800px;
-    left: 15%;
-    top: 55%;
+    left: 16%;
+    top: 50%;
     line-height: 35px;
     font-size: 1em;
-    color: #252a31;
+    color: #7B7373;
+
+    background-color: rgba(217, 217, 217, 0.8);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px; 
+    padding: 20px;
 }
 
 #start{
@@ -93,9 +121,6 @@ section{
 
 /*screen 2 is the fight, no color*/
 #screen2{
-    position: absolute;
-    left: 0%;
-    top: 0%;
     opacity: 0;
 }
 
@@ -133,40 +158,51 @@ section{
     top: 8%;
     display: flex;
     justify-content: center;
+    color: #3f3939;
+}
+
+#fightHeadContent{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
 }
 
 #BestBoiName{
-    margin-left: 30px;
-    margin-right: 30px;
-
+ padding-left: 30px;
 }
 
 #VS{
-    margin-left: 30px;
-    margin-right: 30px;
 
 }
 
 #monsterName{
-    margin-left: 30px;
-    margin-right: 30px;
+
 }
 
 /*health*/
 #health{
+    width: 1000px;
     position: absolute;
-    display: flex;
-    gap: 200px;
     top: 18%;
     left: 16%;
 }
 
-#boiHealth{
+#healthContent{
     position: relative;
 }
 
+#boiHealth{
+    position: absolute;
+    left: 0%;
+    
+}
+
 #monsterHealth{
-    position: relative;
+    position: absolute;
+    left: 47%;
 }
 
 #outerRec1{
@@ -239,23 +275,49 @@ section{
 
 #fightText{
     position: relative;
-    left:20%;
+    left:10%;
 
     width: 800px;
-    height: 100px;
+    height: 80px;
     background-color: rgba(217, 217, 217, 0.8);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 20px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #3f3939;
 }
+
+#btnText1{
+    position: absolute;
+    top: 70%;
+    left: -5%;
+    width: 100px;
+   padding-left: 20px;
+   padding-right: 20px;
+   font-size: 12px;
+}
+
+#btnText2{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 100px;
+   padding-left: 20px;
+   padding-right: 20px;
+   font-size: 12px;
+}
+
 
 #mainBtns{
     position: relative;
-    left: 10%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    
 
-
-    width:100px;
+    width: 200px;
     height: 100px;
-    background-color: rgba(217, 217, 217, 0.8);
 }
 
 
@@ -263,9 +325,6 @@ section{
 
 #screen3{
     background-color: #7A8C61;
-    position: absolute;
-    left: 0%;
-    top: 0%;
     opacity: 0;
 }
 
@@ -281,11 +340,31 @@ section{
     left:30%;
 }
 
-#winCat{
+#winImages{
     position: absolute;
-    top:10%;
-    left:15%;
-    transform: scale(0.5);
+    top:20%;
+    left:25%;
+    transform: scale(0.75);
+}
+
+#winCat{
+    position: relative;
+}
+
+#catWin1{
+    position: absolute;
+    animation: fade1 2s infinite; 
+}
+
+#catWin2{
+    position: absolute;
+    animation: fade2 2s infinite 0.66s;
+}
+
+#catWin3{
+    position: absolute;
+    animation: fade3 2s infinite 1.33s;
+    
 }
 
 #winText2{
@@ -309,9 +388,6 @@ h5{
 
 #screen4{
     background-color: #A7818C;
-    position: absolute;
-    left: 0%;
-    top: 0%;
     opacity: 0;
 }
 
@@ -327,11 +403,30 @@ h5{
     left:30%;
 }
 
-#lossCat{
+#lossImages{
     position: absolute;
-    top:10%;
-    left:15%;
-    transform: scale(0.5);
+    top:20%;
+    left:25%;
+    transform: scale(0.75);
+}
+
+#lossCat{
+    position: relative;
+}
+
+#catloss1{
+    position: absolute;
+    animation: fade1 2s infinite; 
+}
+
+#catloss2{
+    position: absolute;
+    animation: fade2 2s infinite 0.66s;
+}
+
+#catloss3{
+    position: absolute;
+    animation: fade3 2s infinite 1.33s;
 }
 
 #lossText2{
@@ -343,9 +438,6 @@ h5{
 
 #screen5{
     background-color: #8997AD;
-    position: absolute;
-    left: 0%;
-    top: 0%;
     opacity: 0;
 }
 
@@ -363,14 +455,23 @@ h5{
 
 #endText{
     position:absolute;
-    top: 60%;
+    top: 50%;
     left: 15%;
+
+    line-height: 35px;
+    font-size: 1em;
+    color: #7B7373;
+
+    background-color: rgba(217, 217, 217, 0.8);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px; 
+    padding: 20px;
 }
 
 
 #restart{
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 40%;
 
     padding: 20px;
@@ -379,4 +480,23 @@ h5{
     border-radius: 20px;
     border: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+/*______________________________________keyframes_____________________________________*/
+
+@keyframes fade1 {
+    0%, 33.33% { opacity: 1; }
+    33.34%, 100% { opacity: 0; }
+}
+
+@keyframes fade2 {
+    0%, 33.33% { opacity: 0; }
+    33.34%, 66.66% { opacity: 1; }
+    66.67%, 100% { opacity: 0; }
+}
+
+@keyframes fade3 {
+    0%, 66.66% { opacity: 0; }
+    66.67%, 100% { opacity: 1; }
 }

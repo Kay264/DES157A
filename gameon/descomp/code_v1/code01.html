@@ -28,14 +28,33 @@
     -animate sketches
     -more pixel art
     -sound
-    
+
+    -transition end for bars
+
     -->
     <div id="centerThatDivHo">
-        <section id="screen1"> <!--________________________________Intro screen________________________-->
+
+        <div id="InfoBtn">
+            <figure>
+                <img src="images/info.png" alt="information">
+            </figure>
+        </div>
+
+        <div id="sound">
+            <figure>
+                <img src="images/soundOn.png">
+            </figure>
+        </div>
+    
+        <section id="screen1" class="sec"> <!--________________________________Intro screen________________________-->
             <div id="screen1Content">
-                <figure id="firstCat">
-                    <img src="images/tempCat1.png" alt="tempcat1">
-                </figure>
+                <div id="firstCat">
+                    <figure id="firstCatContent">
+                        <img src="images/catvworld1.png" id="catVWorld1" alt="cat vs world 1">
+                        <img src="images/catvworld2.png" id="catVWorld2" alt="cat vs world 2">
+                        <img src="images/catvworld3.png" id="catVWorld3" alt="cat vs world 3">
+                    </figure>
+                </div>
 
                 <div id="screen1Text">
                     <p>You are Best Boi, a fearless house cat.</p>
@@ -48,7 +67,7 @@
         </section>
 
 
-        <section id="screen2"><!--_________________________________fight scenes________________________-->
+        <section id="screen2" class="sec"><!--_________________________________fight scenes________________________-->
            
             <div id="screen2Content">
                 <img src="images/GameOn_BG.png" id="BG" alt="apartment_background">
@@ -56,31 +75,37 @@
                 <button id="quit">quit</button><!--btn2: quit-->
 
                 <header id="fightHead">
-                    <h2 id="bestBoiName">Best Boi</h2>
-                    <h3 id="VS">VS</h3>
-                    <h2 id="monsterName">Box Monster</h2> <!--Monster name-->
+                    <div id="fightHeadContent">
+                        <h2 id="bestBoiName">Best Boi</h2>
+                        <h3 id="VS">VS</h3>
+                        <h2 id="monsterName">Box Monster</h2> <!--Monster name-->
+                    </div>
                 </header>
 
                 <div id="health"> <!--health Bars-->
 
-                    <div id="boiHealth">
-                        <div id="outerRec1">
-                            <div id="innerRec1">
+                    <div id="healthContent">
 
+                        <div id="boiHealth">
+                            <div id="outerRec1">
+                                <div id="innerRec1">
+
+                                </div>
                             </div>
+                            <p id="zero1">0</p>
+                            <p id="hundred1">100</p>
                         </div>
-                        <p id="zero1">0</p>
-                        <p id="hundred1">100</p>
-                    </div>
 
-                    <div id="monsterHealth">
-                        <div id="outerRec2">
-                            <div id="innerRec2">
+                        <div id="monsterHealth">
+                            <div id="outerRec2">
+                                <div id="innerRec2">
 
+                                </div>
                             </div>
+                            <p id="zero2">0</p>
+                            <p id="hundred2">100</p>
                         </div>
-                        <p id="zero2">0</p>
-                        <p id="hundred2">100</p>
+
                     </div>
 
                 </div>
@@ -100,44 +125,54 @@
                 <div id="bottomSection">
 
                     <div id="mainBtns">
-
+                        <img src="images/buttons1.png" alt="">
+                        <p id="btnText1">defend</p>
+                        <p id="btnText2">attack</p>
                     </div>
 
                     <div id="fightText">
-                        <p>...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsa perspiciatis, earum nesciunt recusandae culpa soluta ratione enim fuga officia!</p>
                     </div>
 
                 </div>
             
             </div>
         </section>
-        <section id="screen3"><!--___________________________________win screen________________________-->
+        <section id="screen3" class="sec"><!--___________________________________win screen________________________-->
             <div id="screen3Content">
 
                 <div>
                     <h4 id="winText1">You won!</h4>
-                    <figure id="winCat">
-                        <img src="images/tempCat2.png" alt="tempcat2">
-                    </figure>
+                    <div id="winImages">
+                        <figure id="winCat">
+                            <img src="images/winCat1.png" id="catWin1" alt="cat win 1">
+                            <img src="images/winCat2.png" id="catWin2" alt="cat win 2">
+                            <img src="images/winCat3.png" id="catWin3" alt="cat win 3">
+                        </figure>
+                    </div>
                     <h5 id="winText2">A new opponent has appeared</h5>
                 </div>
 
                 </div>
         </section>
-        <section id="screen4"><!--___________________________________loss screen________________________-->
+        <section id="screen4" class="sec"><!--___________________________________loss screen________________________-->
             <div id="screen4Content">
 
                 <div>
                     <h4 id="lossText1">You lost</h4>
+                    <div id="lossImages">
                         <figure id="lossCat">
-                            <img src="images/tempCat3.png" alt="tempcat3">
+                            <img src="images/lossCat1.png" id="catloss1" alt="cat loss 1">
+                            <img src="images/lossCat2.png" id="catloss2" alt="cat loss 2">
+                            <img src="images/lossCat3.png" id="catloss3" alt="cat loss 3">
                         </figure>
+                    </div>
                     <h5 id="lossText2">Stay Determined!</h5>
                 </div>
 
             </div>
         </section>
-        <section id="screen5"><!--___________________________________end screen________________________-->
+        <section id="screen5" class="sec"><!--___________________________________end screen________________________-->
             <div id="screen5Content">
                 <div id="endCat">
                     <img src="images/loaf.png" alt="loaf">
