@@ -1,0 +1,21 @@
+
+
+img{
+    transform: scale(0.5);
+    
+}
+
+#map{
+    transform: scale(0.2);
+}
+
+
+article{
+    width: 1000px;
+    margin: auto;
+}
+
+body{
+    justify-content: center;
+    margin: auto;
+}
