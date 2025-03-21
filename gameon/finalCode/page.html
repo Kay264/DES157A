@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat VS Everything</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Style Sheet-->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <!--
+    TO DO:
+
+    -sound
+
+    -->
+
+    <div id="InfoBtn">
+        <figure>
+            <img src="images/info.png" id="infoImg" alt="information">
+        </figure>
+    </div>
+
+    <div id="sound">
+        <figure>
+            <img src="images/soundOn.png" id="soundImg" alt="sound">
+        </figure>
+    </div>
+
+    <div id="info">
+        <button id="exitbtn">exit</button>
+        <p>Information:</p>
+        <p>Sound Sources</p>
+        <ul id="soundLinks">
+            <li><a href="#">Sound 1</a></li>
+            <li><a href="#">Sound 2</a></li>
+            <li><a href="#">Sound 3</a></li>
+        </ul>
+    </div>
+
+    <div id="sections">
+
+        
+    
+        <section id="screen1" class="sec"> <!--________________________________Intro screen________________________-->
+            <div id="screen1Content">
+                <div id="firstCat">
+                    <figure id="firstCatContent">
+                        <img src="images/catvworld1.png" id="catVWorld1" alt="cat vs world 1">
+                        <img src="images/catvworld2.png" id="catVWorld2" alt="cat vs world 2">
+                        <img src="images/catvworld3.png" id="catVWorld3" alt="cat vs world 3">
+                    </figure>
+                </div>
+
+                <div id="screen1Text">
+                    <p>You are Best Boi, a fearless house cat.</p>
+                    <p>Your human has brought home monsters that you must vanquish!</p>
+                    <p>Are you ready to fight to protect your home?</p>
+                </div>
+
+                <button id="start">meow!</button> <!--btn1: start-->
+            </div>
+        </section>
+
+
+        <section id="screen2" class="sec"><!--_________________________________fight scenes________________________-->
+           
+            <div id="screen2Content">
+                <img src="images/GameOn_BG.png" id="BG" alt="apartment_background">
+
+                <button id="quit">quit</button><!--btn2: quit-->
+
+                <header id="fightHead">
+                    <div id="fightHeadContent">
+                        <h2 id="bestBoiName">Best Boi</h2>
+                        <h3 id="VS">VS</h3>
+                        <h2 id="monsterName">Box Monster</h2> <!--Monster name-->
+                    </div>
+                </header>
+
+                <div id="health"> <!--health Bars-->
+
+                    <div id="healthContent">
+
+                        <div id="boiHealth">
+                            <div id="outerRec1">
+                                <div id="innerRec1">
+
+                                </div>
+                            </div>
+                            <p id="zero1">0</p>
+                            <p id="hundred1">100</p>
+                        </div>
+
+                        <div id="monsterHealth">
+                            <div id="outerRec2">
+                                <div id="innerRec2">
+
+                                </div>
+                            </div>
+                            <p id="zero2">0</p>
+                            <p id="hundred2">100</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="characters">
+
+                    <div id="bestBoi">
+                        <img src="images/cat_start.png" alt="Best boi">
+                    </div>
+
+                    <div id="monster">
+                        <img src="images/cardboard.png" alt="box monster">
+                    </div>
+
+                </div>
+
+                <div id="bottomSection">
+
+                    <div id="mainBtns">
+                        <img src="images/buttons1.png" alt="">
+                        <p id="btnText1">defend</p>
+                        <p id="btnText2">attack</p>
+                    </div>
+
+                    <div id="fightText">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsa perspiciatis, earum nesciunt recusandae culpa soluta ratione enim fuga officia!</p>
+                    </div>
+
+                </div>
+            
+            </div>
+        </section>
+        <section id="screen3" class="sec"><!--___________________________________win screen________________________-->
+            <div id="screen3Content">
+
+                <div>
+                    <h4 id="winText1">You won!</h4>
+                    <div id="winImages">
+                        <figure id="winCat">
+                            <img src="images/winCat1.png" id="catWin1" alt="cat win 1">
+                            <img src="images/winCat2.png" id="catWin2" alt="cat win 2">
+                            <img src="images/winCat3.png" id="catWin3" alt="cat win 3">
+                        </figure>
+                    </div>
+                    <h5 id="winText2">A new opponent has appeared</h5>
+                </div>
+
+                </div>
+        </section>
+        <section id="screen4" class="sec"><!--___________________________________loss screen________________________-->
+            <div id="screen4Content">
+
+                <div>
+                    <h4 id="lossText1">You lost</h4>
+                    <div id="lossImages">
+                        <figure id="lossCat">
+                            <img src="images/lossCat1.png" id="catloss1" alt="cat loss 1">
+                            <img src="images/lossCat2.png" id="catloss2" alt="cat loss 2">
+                            <img src="images/lossCat3.png" id="catloss3" alt="cat loss 3">
+                        </figure>
+                    </div>
+                    <h5 id="lossText2">Stay Determined!</h5>
+                </div>
+
+            </div>
+        </section>
+        <section id="screen5" class="sec"><!--___________________________________end screen________________________-->
+            <div id="screen5Content">
+                <div id="endCat">
+                    <img src="images/loaf.png" alt="loaf">
+                </div>
+                <div id="endText">
+                    <p>You vanquished all the monsters!</p>
+                    <p>Why is the human grabbing the evil water machine?</p>
+                    <p>To be continued...</p>
+                </div>
+
+                <button id="restart">restart</button>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
