@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Every Picture Final</title>
+    <title>Every Picture Experiment</title>
 
     <!--JavaScript-->
     <script src="script.js" defer></script>
@@ -17,7 +17,7 @@
 </head>
 <body>
     
-    <section id="intro" class="hidden">
+    <section id="intro" class="showing">
 
         <h1>Tilden Park Every Picture Project</h1>
 
@@ -49,7 +49,7 @@
 
     </section>
     
-    <section class="showing">
+    <section id="mainPage" class="hidden">
         <main>
             <header>
                 <h1>Tilden Park Every Picture Project</h1>
@@ -61,55 +61,59 @@
             </figure>
             
             <map name="image-map">
-                <area target="" alt="sticks" title="sticks" href="" coords="534,113,490,75" shape="rect">
-                <area target="" alt="mush" title="mush" href="" coords="737,126,779,164" shape="rect">
-                <area target="" alt="goat" title="goat" href="" coords="682,440,731,491" shape="rect">
-                <area target="" alt="leaf" title="leaf" href="" coords="786,434,832,471" shape="rect">
-                <area target="" alt="bird" title="bird" href="" coords="1058,368,1106,421" shape="rect">
+                <area id="sticks" target="" alt="sticks" title="sticks" href="" coords="534,113,490,75" shape="rect">
+                <area id="mush" target="" alt="mush" title="mush" href="" coords="737,126,779,164" shape="rect">
+                <area id="goat" target="" alt="goat" title="goat" href="" coords="682,440,731,491" shape="rect">
+                <area id="leaf" target="" alt="leaf" title="leaf" href="" coords="786,434,832,471" shape="rect">
+                <area id="bird" target="" alt="bird" title="bird" href="" coords="1058,368,1106,421" shape="rect">
             </map>
 
-            <div id="polaroid1" class="hidden">
-                <div id="image1" class="showing">
+            <div id="poloroid1" class="hidden">
+                <div id="image1">
 
-                    <img src="images/bird.jpg" class="image" alt="tilden1">
+                    <img src="images/bird.jpg" alt="tilden1">
 
-                    <button id="close">X</button>
+                    <button class="close">X</button>
                 </div>
             </div>
 
-            <div id="polaroid2" class="hidden">
-                <div id="image2" class="showing">
+            <div id="poloroid2" class="hidden">
+                <div id="image2">
 
-                    <img src="images/goat.jpg" class="image" alt="tilden2">
+                    <img src="images/goat.jpg" alt="tilden2">
 
-                    <button id="close">X</button>
+                    <button class="close">X</button>
                 </div>
             </div>
 
-            <div id="polaroid3" class="hidden">
-                <div id="image3" class="showing">
+            <div id="poloroid3" class="hidden">
+                <div id="image3">
                    
                          <img src="images/leaf.jpg"  alt="tilden3">
                     
-                    <button id="close">X</button>
+                    <button class="close">X</button>
                 </div>
             </div>
 
-            <div id="polaroid4" class="hidden">
-                <div id="image4" class="showing">
+            <div id="poloroid4" class="hidden">
+                <div id="image4">
 
-                    <img src="images/mush.jpg" class="image" alt="tilden4">
+                    <img src="images/mush.jpg" alt="tilden4">
 
-                    <button id="close">X</button>
+                    <button class="close">X</button>
                 </div>
             </div>
 
-            <div id="polaroid5" class="showing">
-                <div id="image5" class="showing">
-                    <img src="images/sticks.jpg" class="image" alt="tilden5">
-                    <button id="close">X</button>
+            <div id="poloroid5" class="hidden">
+                <div id="image5">
+
+                    <img src="images/sticks.jpg" id="png" alt="tilden5">
+
+                    <button class="close">X</button>
                 </div>
             </div>
+
+
         </main>
     </section>
     
